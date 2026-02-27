@@ -1,4 +1,4 @@
-$path = "balkan_v1.csv"
+$path = "balkan_v*.csv"
 $csv = Import-Csv $path -Delimiter ";"
 $randomRow = $csv | Sort-Object { [int]$_.Points }| Select-Object -First 1
 $randomRowClone = $randomRow
